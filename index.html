@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>V3pi — Structural Document Verification</title>
+  <meta name="description" content="V3pi produces cryptographically verifiable evidence showing whether documents are structurally consistent or inconsistent. Deterministic. Auditable. Independently verifiable. No AI. No probability scores.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://v3pi.com">
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Organization", "name": "V3pi", "url": "https://v3pi.com", "email": "hello@v3pi.com", "description": "Structural document verification service producing deterministic, cryptographically verifiable evidence packages. No AI/ML in the verification chain." }
+  </script>
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Service", "name": "V3pi Structural Document Verification", "provider": { "@type": "Organization", "name": "V3pi", "url": "https://v3pi.com" }, "description": "Deterministic structural verification service that compares documents and produces cryptographically verified evidence packages showing whether documents are structurally consistent or inconsistent, with exact identification of where and how differences occur. All results independently verifiable via standalone verification utility. No AI/ML in the verification chain.", "serviceType": "Professional verification services", "areaServed": "Worldwide", "availableChannel": { "@type": "ServiceChannel", "serviceUrl": "https://v3pi.com", "availableLanguage": "English" } }
+  </script>
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "SoftwareApplication", "name": "V3pi Evidence Package Verification Utility", "description": "Standalone utility that independently verifies the integrity of every artifact in a V3pi evidence package by checking SHA-256 hashes against the recorded inventory. Runs on Linux, Windows, and macOS. Does not require access to the V3pi system.", "applicationCategory": "SecurityApplication", "operatingSystem": "Linux, Windows, macOS", "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" } }
+  </script>
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "Dataset", "name": "V3pi Demo Evidence Package", "description": "A complete V3pi structural verification evidence package produced from public-domain regulatory text. Contains divergence reports, concordance analysis, frequency analysis, location detail, witness files, cryptographic inventory, provenance chain, and standalone verification utility. Freely downloadable for inspection.", "license": "https://creativecommons.org/licenses/by/4.0/", "creator": { "@type": "Organization", "name": "V3pi" }, "distribution": { "@type": "DataDownload", "encodingFormat": "application/zip", "contentUrl": "https://github.com/v3pi/evidence-package-demo" } }
+  </script>
+
+  <script type="application/ld+json">
+  { "@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [
+    { "@type": "Question", "name": "What methodology does V3pi use?", "acceptedAnswer": { "@type": "Answer", "text": "V3pi's verification methodology is proprietary. Its unit of analysis is not equivalent to any conventional document comparison approach. V3pi operates on a proprietary structural representation layer that is not reducible to conventional diff, similarity, or binary comparison methods. V3pi produces deterministic, reproducible results with no AI in the verification chain." } },
+    { "@type": "Question", "name": "How do I prove a document was altered?", "acceptedAnswer": { "@type": "Answer", "text": "V3pi compares two documents and produces an evidence package showing exactly where and how they differ structurally. Every artifact is cryptographically hashed with SHA-256 and independently verifiable using a standalone verification utility. The evidence package includes divergence reports with positional anchors, frequency analysis, and a complete provenance chain." } },
+    { "@type": "Question", "name": "How is V3pi different from a diff tool or redlining software?", "acceptedAnswer": { "@type": "Answer", "text": "Diff tools and redlining software show word-level text changes as visual markups. V3pi produces cryptographically verified evidence packages with positional anchors, frequency analysis across entire documents, structural divergence reports, and a standalone verification utility that third parties can run independently. V3pi delivers evidence, not markups." } },
+    { "@type": "Question", "name": "Does V3pi use AI or machine learning?", "acceptedAnswer": { "@type": "Answer", "text": "No. V3pi uses no machine learning, no embeddings, no similarity scoring, and no probabilistic models. The verification is entirely deterministic. Given the same inputs and configuration, V3pi produces the same outputs every time. The verification tool itself cannot hallucinate." } },
+    { "@type": "Question", "name": "Can V3pi verify AI-generated documents?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. V3pi can verify whether an AI-generated document is structurally consistent with a reference document. Because no AI is used in the verification chain, the verification is independent of the system that produced the document. This makes V3pi suitable for verifying outputs from AI agents, language models, and automated document generation systems." } },
+    { "@type": "Question", "name": "Does V3pi certify compliance or court-readiness?", "acceptedAnswer": { "@type": "Answer", "text": "No. V3pi produces structural evidence for review by qualified professionals. It does not certify legal admissibility, regulatory compliance, or court-readiness. Those determinations belong to attorneys, compliance officers, and other qualified experts. V3pi supports expert judgment with defensible evidence." } },
+    { "@type": "Question", "name": "How do I engage V3pi?", "acceptedAnswer": { "@type": "Answer", "text": "V3pi operates as a scoped professional verification service. Contact hello@v3pi.com to discuss your verification needs and document scope. Each engagement defines the documents under review, deliverables produced, and terms of engagement. Evidence packages are delivered as offline artifacts with standalone verification capability." } }
+  ] }
+  </script>
+
+  <style>
+    :root {
+      --color-text: #1a1a1a;
+      --color-text-mid: #222;
+      --color-text-secondary: #2d2d2d;
+      --color-blue: #0969da;
+      --color-blue-hover: #0550ae;
+      --color-bg: #ffffff;
+      --color-bg-alt: #f5f7fa;
+      --color-border: #ddd;
+      --color-border-light: #eaeced;
+      --font-body: "Georgia", "Times New Roman", serif;
+      --font-heading: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+      --max-width: 720px;
+    }
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: var(--font-body); font-size: 17px; line-height: 1.75; color: var(--color-text); background: var(--color-bg); }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 28px; }
+    a { color: var(--color-blue); text-decoration: none; }
+    a:hover { color: var(--color-blue-hover); }
+
+    .wordmark { padding: 36px 0 0; }
+    .wordmark-text { font-family: var(--font-heading); font-size: 34px; font-weight: 600; letter-spacing: 0.5px; color: var(--color-blue); }
+
+    .hero { padding: 48px 0 52px; border-bottom: 1px solid var(--color-border); }
+    .hero h1 { font-family: var(--font-heading); font-size: 30px; font-weight: 700; line-height: 1.25; color: var(--color-text); margin-bottom: 6px; }
+    .hero .tagline { font-family: var(--font-heading); font-size: 13px; font-weight: 400; letter-spacing: 2.5px; text-transform: uppercase; color: var(--color-blue); margin-bottom: 28px; }
+    .hero .summary { font-size: 18px; line-height: 1.7; color: var(--color-text-secondary); margin-bottom: 14px; max-width: 640px; }
+    .hero .no-ai { font-family: var(--font-heading); font-size: 15px; font-weight: 600; color: var(--color-text-mid); margin-bottom: 40px; }
+
+    .hero-actions { display: flex; flex-direction: column; gap: 0; }
+    .hero-action { font-family: var(--font-heading); font-size: 16px; font-weight: 600; color: var(--color-blue); text-decoration: none; display: block; padding: 14px 0; border-top: 1px solid var(--color-border-light); }
+    .hero-action:last-child { border-bottom: 1px solid var(--color-border-light); }
+    .hero-action:hover { color: var(--color-blue-hover); }
+    .hero-action .arrow { margin-left: 6px; font-weight: 400; }
+
+    section { padding: 48px 0; border-bottom: 1px solid var(--color-border-light); }
+    section:last-of-type { border-bottom: none; }
+    section h2 { font-family: var(--font-heading); font-size: 21px; font-weight: 700; color: var(--color-text); margin-bottom: 18px; }
+    section h3 { font-family: var(--font-heading); font-size: 16px; font-weight: 600; color: var(--color-blue); margin-top: 24px; margin-bottom: 6px; }
+    section p { margin-bottom: 14px; color: var(--color-text-secondary); }
+    section p:last-child { margin-bottom: 0; }
+    section p strong { color: var(--color-text-mid); }
+
+    .steps { counter-reset: step; list-style: none; padding: 0; }
+    .steps li { counter-increment: step; padding: 12px 0 12px 48px; position: relative; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border-light); }
+    .steps li:last-child { border-bottom: none; }
+    .steps li::before { content: counter(step); position: absolute; left: 0; top: 13px; width: 30px; height: 30px; line-height: 30px; text-align: center; font-family: var(--font-heading); font-size: 13px; font-weight: 600; color: var(--color-blue); border: 1.5px solid var(--color-blue); }
+    .steps li strong { color: var(--color-text-mid); }
+
+    .deliverable { margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--color-border-light); }
+    .deliverable:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .deliverable strong { font-family: var(--font-heading); font-size: 15px; color: var(--color-text); display: block; margin-bottom: 3px; }
+    .deliverable p { font-size: 16px; }
+
+    .audience { margin-bottom: 24px; padding-bottom: 24px; border-bottom: 1px solid var(--color-border-light); }
+    .audience:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .audience h3 { margin-top: 0; }
+
+    .not-list { list-style: none; padding: 0; }
+    .not-list li { padding: 9px 0; color: var(--color-text-secondary); border-bottom: 1px solid var(--color-border-light); font-size: 16px; }
+    .not-list li:last-child { border-bottom: none; }
+
+    .callout { background: var(--color-bg-alt); border-left: 3px solid var(--color-blue); padding: 20px 24px; margin-top: 20px; font-family: var(--font-heading); font-size: 14px; line-height: 1.6; color: var(--color-text-mid); }
+
+    .demo-actions { margin-top: 24px; font-family: var(--font-heading); font-size: 15px; line-height: 2.4; }
+    .demo-actions a { font-weight: 500; }
+    .demo-actions .dl-label { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #777; margin-right: 8px; }
+
+    .contact-section { text-align: center; padding: 56px 0; }
+    .contact-email { font-family: var(--font-heading); font-size: 20px; font-weight: 400; letter-spacing: 0.5px; color: var(--color-blue); text-decoration: none; border-bottom: 1.5px solid var(--color-blue); padding-bottom: 2px; }
+    .contact-email:hover { color: var(--color-blue-hover); border-color: var(--color-blue-hover); }
+    .contact-note { font-size: 15px; color: var(--color-text-secondary); margin-top: 12px; }
+
+    footer { padding: 24px 0; border-top: 1px solid var(--color-border); text-align: center; font-family: var(--font-heading); font-size: 12px; letter-spacing: 0.3px; color: #999; }
+
+    @media (max-width: 600px) {
+      .wordmark-text { font-size: 28px; }
+      .hero { padding: 44px 0 40px; }
+      .hero h1 { font-size: 24px; }
+      .hero .summary { font-size: 16px; }
+      section { padding: 36px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wordmark"><div class="container"><div class="wordmark-text">V3pi</div></div></div>
+
+  <header class="hero"><div class="container">
+    <h1>Structural Document Verification</h1>
+    <div class="tagline">Deterministic · Auditable · Independently Verifiable</div>
+    <p class="summary">V3pi produces cryptographically verifiable evidence showing whether documents are structurally consistent or inconsistent — and precisely where differences occur.</p>
+    <p class="no-ai">No AI. No probability scores. No interpretation. Just evidence.</p>
+    <div class="hero-actions">
+      <a href="mailto:hello@v3pi.com?subject=V3pi%20Verification%20Inquiry" class="hero-action">Contact us about a verification engagement <span class="arrow">→</span></a>
+      <a href="https://github.com/v3pi/evidence-package-demo" class="hero-action">Download sample evidence package and verification tool <span class="arrow">→</span></a>
+    </div>
+  </div></header>
+
+  <section><div class="container">
+    <h2>What V3pi Does</h2>
+    <p>V3pi compares two or more documents and determines whether they are structurally consistent or inconsistent. It identifies exactly which structural patterns are shared, which exist only in one document, and where those differences occur.</p>
+    <p>V3pi extracts structural representations from both documents using a proprietary methodology. These representations are compared deterministically, producing a precise inventory of what is shared, what was added, what was removed, and what changed in frequency.</p>
+    <p>The result is a conformance determination — <strong>Consistent</strong>, <strong>Inconsistent</strong>, or <strong>Review Recommended</strong> — supported by a complete evidence package that qualified professionals can examine, verify, and use.</p>
+    <p>The conformance determination is driven by an explicit verification policy included in the evidence package. The policy defines, for each structural level, whether differences must match exactly, may be flagged for review, or may be reported without affecting the determination. There are no hidden thresholds, no scoring algorithms, and no percentage-based similarity metrics. The policy itself is part of the audit trail and can be independently inspected.</p>
+    <p>V3pi does not interpret meaning, assess intent, or draw conclusions. It provides structural evidence. Professional judgment stays where it belongs — with the professionals.</p>
+  </div></section>
+
+  <section><div class="container">
+    <h2>The Problem</h2>
+    <p>Documents change. Contracts are revised between signing rounds. Regulatory notices are updated across versions. Policies are edited after board approval. AI systems generate documents that may not match their source material.</p>
+    <p>Diff tools show you which words changed, but produce visual markups — not evidence. They are productivity tools for editing, not proof of what happened.</p>
+    <p>AI-based comparison tools estimate similarity with confidence scores, but their results are probabilistic. They cannot guarantee determinism, and the tool itself may introduce errors — AI checking AI.</p>
+    <p>Legal, regulatory, and scientific environments require something different: reproducible proof of what changed, where it changed, and evidence that can be independently verified by any party.</p>
+  </div></section>
+
+  <section><div class="container">
+    <h2>How It Works</h2>
+    <ol class="steps">
+      <li><strong>Submit documents.</strong> Provide the reference document and the document to be evaluated.</li>
+      <li><strong>Structural extraction and comparison.</strong> V3pi extracts structural representations from both documents using a proprietary methodology and compares them deterministically.</li>
+      <li><strong>Policy-driven evaluation.</strong> A conformance determination is produced based on an explicit verification policy that defines the structural requirements for each level of analysis.</li>
+      <li><strong>Evidence package delivery.</strong> A complete offline evidence package is delivered — including the verification policy, all structural evidence, and a standalone verification utility that any party can run independently.</li>
+    </ol>
+  </div></section>
+
+  <section><div class="container">
+    <h2>The Evidence Package</h2>
+    <p>Every engagement produces a comprehensive evidence package. All artifacts are cryptographically hashed and independently verifiable.</p>
+    <div class="deliverable"><strong>Structural Summary Report</strong><p>A high-level determination of consistency or inconsistency across the document pair, with counts of shared and divergent structural units.</p></div>
+    <div class="deliverable"><strong>Divergence Report</strong><p>Every detected structural difference, with positional anchors showing exactly where in each document the difference occurs, including surrounding context.</p></div>
+    <div class="deliverable"><strong>Concordance Report</strong><p>An inventory of all structural patterns shared between both documents — what did not change — with frequency counts and positions.</p></div>
+    <div class="deliverable"><strong>Frequency Analysis</strong><p>Structural patterns present in both documents but occurring at different frequencies. Reveals systematic compositional shifts that word-level comparison cannot detect.</p></div>
+    <div class="deliverable"><strong>Location Detail</strong><p>Exact positions and character offsets for every divergent structural unit across both documents. The most granular level of evidence available.</p></div>
+    <div class="deliverable"><strong>Cryptographic Inventory and Provenance</strong><p>SHA-256 hashes for every delivered file, with a complete provenance chain recording inputs, outputs, generation metadata, and the verification policy that governed the conformance determination.</p></div>
+    <div class="deliverable"><strong>Standalone Verification Utility</strong><p>A utility that any party can run — on Linux, Windows, or macOS — to independently verify the integrity of every artifact in the evidence package. No access to V3pi required.</p></div>
+  </div></section>
+
+  <section><div class="container">
+    <h2>Who It's For</h2>
+    <div class="audience"><h3>Litigation Support</h3><p>A redline shows you what changed. V3pi produces an evidence package that proves what changed — with positional anchors, structural divergence reports, cryptographic hashes, and a verification utility that opposing counsel can run independently.</p></div>
+    <div class="audience"><h3>Compliance and Regulatory</h3><p>SHA-256 hashes on every artifact. A standalone verification utility your auditors can run independently. A complete provenance chain from input documents through final determination. Evidence designed for regulatory scrutiny.</p></div>
+    <div class="audience"><h3>AI Output Verification</h3><p>No AI in the verification chain. No probability scores. No similarity ratings. Either the structure is consistent, or it isn't — and here is exactly where and how it differs. The verification tool itself cannot hallucinate.</p></div>
+    <div class="audience"><h3>Scientific and Research Documentation</h3><p>Verify that manuscripts, protocols, and research documents have not been altered between submission versions. Deterministic results that are reproducible and independently verifiable.</p></div>
+    <div class="audience"><h3>Multi-Agent and Agentic AI Systems</h3><p>Agent communication protocols handle identity and routing. V3pi handles content verification. When an agent produces or processes a document, V3pi verifies whether the output is structurally consistent with the input. Trust the evidence, not the agent.</p></div>
+  </div></section>
+
+  <section><div class="container">
+    <h2>What V3pi Is Not</h2>
+    <ul class="not-list">
+      <li>V3pi is not a diff tool or redlining software. It produces evidence packages, not visual markups.</li>
+      <li>V3pi does not compare text, tokens, schemas, or data structures. Its unit of analysis is proprietary and not equivalent to any conventional document comparison approach.</li>
+      <li>V3pi operates on a proprietary structural representation layer that is not reducible to conventional diff, similarity, or binary comparison methods.</li>
+      <li>V3pi does not use AI, machine learning, embeddings, or probabilistic models. There is no AI in the verification chain.</li>
+      <li>V3pi is not a platform, API, dashboard, or subscription service. It is a scoped professional verification service.</li>
+      <li>V3pi does not certify court-readiness, legal admissibility, or regulatory compliance. It produces evidence for qualified professionals.</li>
+      <li>V3pi does not interpret meaning, assess intent, or score similarity. Structural evidence is delivered without opinion.</li>
+      <li>V3pi does not replace expert judgment. It supports expert judgment with defensible evidence.</li>
+    </ul>
+  </div></section>
+
+  <section><div class="container">
+    <h2>Engagement Model</h2>
+    <p>V3pi operates as a scoped professional verification service. Each engagement defines the documents under review, the deliverables to be produced, and the terms of engagement.</p>
+    <p>Engagement terms, including document handling, are defined prior to processing. Evidence packages are delivered as offline artifacts with standalone verification capability.</p>
+    <p>Engagements are scoped by document set complexity. <a href="mailto:hello@v3pi.com?subject=V3pi%20Verification%20Inquiry">Contact us</a> to discuss your verification needs.</p>
+    <p>V3pi's structural verification model is not limited to regulatory text. The same deterministic approach applies wherever structured representations must be verified under explicit policy — including high-assurance workflows in AI and automation systems.</p>
+  </div></section>
+
+  <section><div class="container">
+    <h2>Demo Evidence Package</h2>
+    <p>A complete V3pi evidence package is available for public inspection. This demo illustrates a policy-governed structural verification run on a real regulatory document pair.</p>
+
+    <h3>The Documents</h3>
+    <p>The reference document is a section of HIPAA §164.520 — the federal regulation governing Notice of Privacy Practices. The evaluated document is a modified version with eight deliberate changes: word substitutions, negation removals, negation insertions, and logical operator changes. V3pi detected all eight structural modifications across every level of analysis.</p>
+    <p>These documents were chosen because they are public-domain regulatory text with non-trivial structure — sections, lists, obligations, and exceptions — representative of real-world compliance and legal workflows where proof of structural change matters.</p>
+
+    <h3>Where to Start</h3>
+    <div class="deliverable"><strong>Just want the headline?</strong><p>Open <code>summary.csv</code> — one row showing the determination and counts.</p></div>
+    <div class="deliverable"><strong>Show me what changed.</strong><p>Open <code>divergence.csv</code> — every detected structural difference with excerpts from both documents.</p></div>
+    <div class="deliverable"><strong>Show me exactly where.</strong><p>Open <code>location_detail.csv</code> — exact positions and character offsets for every divergent structure in both documents.</p></div>
+    <div class="deliverable"><strong>What governed the determination?</strong><p>Open <code>provenance.json</code> and look under the <code>policy</code> key — the explicit rules that drove the conformance decision.</p></div>
+    <div class="deliverable"><strong>Prove nothing was tampered with.</strong><p>Run the standalone verification utility against <code>inventory.json</code> — confirm every file's SHA-256 hash matches.</p></div>
+
+    <div class="callout">Don't take our word for it. Verify the evidence yourself.</div>
+    <div class="demo-actions">
+      <span class="dl-label">Download</span> <a href="https://github.com/v3pi/evidence-package-demo">Sample evidence package with verification tool →</a>
+    </div>
+  </div></section>
+
+  <section class="contact-section"><div class="container">
+    <h2>Contact</h2>
+    <p><a href="mailto:hello@v3pi.com?subject=V3pi%20Verification%20Inquiry" class="contact-email">hello@v3pi.com</a></p>
+    <p class="contact-note">Briefly describe your verification needs and document scope.</p>
+  </div></section>
+
+  <footer><div class="container">V3pi · Structural Document Verification · &copy; 2026</div></footer>
+
+</body>
+</html>
